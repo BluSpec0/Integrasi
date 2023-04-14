@@ -5,7 +5,7 @@ import bookService from "@/services/book.service";
 import { useQuery } from "@tanstack/react-query";
 
 const BookPage = () => {
-  const { data, isLoading } = useQuery(["books"], bookService.getList);
+  const { data, isLoading } = useQuery(["books"], bookService.getList,);
 
   return (
     <ExampleLayout>

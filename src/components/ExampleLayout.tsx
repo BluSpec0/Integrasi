@@ -5,7 +5,7 @@ const ExampleLayout = ({ children }: any) => {
     <>
       <div className="fixed z-50 w-full bg-white h-[64px] p-5 border border-b">
         <div className="flex items-center justify-between">
-          Header <Link href={"/books"}>Books</Link>
+          Header <Link href={"/books"}>Books</Link><Link href={"/films"}>Film</Link>
         </div>
       </div>
       <div className="pt-[88px] pb-4 px-2 md:px-5 bg-blue-300">{children}</div>

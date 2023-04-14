@@ -1,6 +1,6 @@
 import { Badge, Card, Group, Image, Text } from "@mantine/core";
 
-const BookCard = ({ data }: { data: any[] }) => {
+const DetailCard = ({ data }: { data: any[] }) => {
   console.log(data);
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -20,10 +20,13 @@ const BookCard = ({ data }: { data: any[] }) => {
           <Text size="sm" color="dimmed">
             {item.synopsis?.substring(0, 200)}...
           </Text>
+          <Text size="sm" color="dimmed">
+            {item.content?.substring(0, 200)}...
+          </Text>
         </Card>
       ))}
     </div>
   );
 };
 
-export default BookCard;
+export default DetailCard;
